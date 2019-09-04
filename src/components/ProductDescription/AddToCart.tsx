@@ -27,6 +27,7 @@ const AddToCart: React.FC<{
               <AddToCartButton
                 className="product-description__action"
                 onClick={() => {
+                  sdk.emitEvent("checkout-btn", "add_to_cart");
                   if (user && !checkout) {
                     createCheckout({
                       variables: {

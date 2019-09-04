@@ -18,6 +18,7 @@ module.exports = ({ sourceDir, distDir }) => ({
     ]
   },
   entry: {
+    sdk: `${sourceDir}/experiments.js`,
     app: `${sourceDir}/index.tsx`
   },
   output: {
@@ -105,8 +106,8 @@ module.exports = ({ sourceDir, distDir }) => ({
       }
     }),
     new webpack.EnvironmentPlugin({
-      "BACKEND_URL": "http://localhost:8000/",
-      "SERVICE_WORKER_TIMEOUT": "60000"
+      BACKEND_URL: "http://localhost:8000/",
+      SERVICE_WORKER_TIMEOUT: "60000"
     })
   ],
   node: {
