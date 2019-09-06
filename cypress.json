@@ -1,5 +1,5 @@
 {
-  "baseUrl": "https://infallible-hopper-2fbb40.netlify.com/",
+  "baseUrl": "https://confident-lovelace-49fb20.netlify.com/",
   "env": {
     "BACKEND_URL": "http://localhost:8000",
     "GRAPHQL_ID": "graphql"
